@@ -96,6 +96,8 @@ La mejora de esta aplicación tiene como objetivo proporcionar una solución cen
 
 2. <span id="_Toc52661347" class="anchor"></span>**Titulo**
 
+MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
+
 3. <span id="_Toc52661348" class="anchor"></span>**Autores**
 
 4. <span id="_Toc52661349" class="anchor"></span>**Planteamiento del problema**
