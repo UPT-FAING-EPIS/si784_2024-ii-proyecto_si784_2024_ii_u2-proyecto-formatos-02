@@ -7,7 +7,7 @@
   
   ### **Escuela Profesional de Ingeniería de Sistemas**  
   
-  ## **Proyecto: "MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS"**  
+  ## **Proyecto: "PDF SOLUTIONS"**  
   
   **Curso:** Calidad y prueba de software  
   **Docente:** Ing. Patrick Jose Cuadros Quiroga  
@@ -24,7 +24,7 @@
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 <div align="center">
-  Sistema: "MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS"
+  Sistema: "PDF SOLUTIONS"
 
   ## **Informe de Factibilidad**
 
@@ -84,7 +84,7 @@ The report presents the improvement of the PDF Solutions application, designed t
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-**<u>Tema: Mejoramiento de la Aplicación NNNNNNNNNNNNNNN</u>**
+**<u>Tema: Mejoramiento de la Aplicación PDF SOLUTION</u>**
 
 1. <span id="_Toc52661346" class="anchor"></span>**Antecedentes o introducción**
 
