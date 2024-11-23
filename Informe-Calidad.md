@@ -176,5 +176,17 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     7.2.   Metodología, técnicas usadas
 
+    Para el desarrollo de la aplicación, se adoptaron diversas metodologías y técnicas que permitieron optimizar el flujo de trabajo y asegurar la calidad del producto final. Entre las principales metodologías y técnicas utilizadas se destacan:
+
+    - **Desarrollo Ágil con GitHub Projects**: Se utilizó GitHub Projects para la planificación y gestión del trabajo en un entorno ágil. Las tareas se organizaron en tableros Kanban, permitiendo una visibilidad clara del progreso, asignación de tareas y establecimiento de prioridades. Cada tarea se vinculó con issues y pull requests dentro del repositorio, facilitando la colaboración y el seguimiento del avance de las funcionalidades.
+
+    - **Integración Continua (CI)**: Se implementó un flujo de integración continua a través de GitHub Actions. Cada vez que se realizaba un cambio en el código (mediante un push o pull request), se ejecutaban pruebas automáticas, análisis de calidad con SonarQube y análisis de seguridad con Snyk, asegurando que el código estuviera siempre en condiciones óptimas para ser fusionado con la rama principal.
+
+    - **Análisis Estático de Código**:
+    
+    - **SonarQube**: Para garantizar la calidad del código, se realizaron análisis estáticos con SonarQube, que permitió detectar errores, vulnerabilidades, duplicación de código y deuda técnica. Esto ayudó a mantener un código más limpio, eficiente y mantenible.
+    
+    - **Snyk**: Se utilizó Snyk para identificar vulnerabilidades en las dependencias de terceros, ofreciendo soluciones y actualizaciones a las bibliotecas vulnerables, mejorando la seguridad general de la aplicación.
+
 8. Cronograma
    (personas, tiempo, otros recursos) Basado en las observaciones que la herramienta SonarQube les informara         sobre la aplicación, a fin de reducir la deuda tecnica, vulnerabilidades, fallas, etc. a 0.
