@@ -13,9 +13,9 @@
 
 
   ### **Integrantes:**
-  - Mario Antonio Flores Ramos (2018000597)
-  - Erick Javier Salinas Condori (2020069046)
-  - Fiorela Milady Ticahuanca Cutipa (2020068765)
+   Mario Antonio Flores Ramos (2018000597)
+   Erick Javier Salinas Condori (2020069046)
+   Fiorela Milady Ticahuanca Cutipa (2020068765)
 
   **Tacna – Perú**  
   2024
