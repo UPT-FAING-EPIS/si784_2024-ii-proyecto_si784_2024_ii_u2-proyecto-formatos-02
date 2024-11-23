@@ -88,7 +88,11 @@ The report presents the improvement of the PDF Solutions application, designed t
 
 1. <span id="_Toc52661346" class="anchor"></span>**Antecedentes o introducción**
 
+El presente informe aborda el mejoramiento de la aplicación PDF Solutions, desarrollada para gestionar documentos PDF de manera eficiente y segura. Esta aplicación se ha construido con una arquitectura que integra un sistema de login y suscripciones, ofreciendo diferentes niveles de acceso a los usuarios según su tipo de suscripción. El proyecto se enfoca en proporcionar herramientas para el manejo de archivos PDF, permitiendo a los usuarios realizar tareas como juntar y cortar documentos de manera sencilla y rápida.
 
+PDF Solutions busca resolver problemas comunes en la manipulación de archivos PDF, como la falta de opciones para combinar varios documentos o dividir un archivo grande en secciones más pequeñas. La aplicación está diseñada para ser intuitiva y funcional, ofreciendo una experiencia de usuario amigable y eficiente. Con opciones de suscripción, los usuarios pueden acceder a funcionalidades avanzadas según sus necesidades, asegurando un servicio personalizado y adaptable.
+
+La mejora de esta aplicación tiene como objetivo proporcionar una solución centralizada y accesible para la gestión de archivos PDF, reduciendo los errores y simplificando procesos que tradicionalmente son manuales y tediosos. Además, ofrece una experiencia de usuario optimizada, facilitando la manipulación de documentos y brindando un servicio confiable y eficiente para individuos y empresas que requieren un manejo eficaz de sus archivos PDF.
 
 2. <span id="_Toc52661347" class="anchor"></span>**Titulo**
 
