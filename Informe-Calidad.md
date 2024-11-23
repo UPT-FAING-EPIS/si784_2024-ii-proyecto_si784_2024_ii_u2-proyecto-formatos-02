@@ -135,7 +135,16 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     5.1. General
 
+    Optimizar la aplicación PDF Solutions para mejorar la gestión y manipulación de archivos PDF, brindando funcionalidades avanzadas de manera eficiente y fácil de usar.
+
     5.8. Especifico
+
+    - Implementar la funcionalidad de login y suscripciones: Garantizando un acceso seguro y personalizado para los usuarios según su nivel de suscripción.  
+    - Desarrollar las opciones para juntar y cortar archivos PDF: Permitiendo que los usuarios realicen estas acciones de manera sencilla y eficiente.  
+    - Optimizar la experiencia del usuario en la manipulación de archivos PDF: Asegurando un proceso intuitivo y fácil de utilizar.  
+    - Integrar herramientas de administración para gestionar las suscripciones de los usuarios: Facilitando la modificación y actualización de sus niveles de acceso.  
+    - Implementar un sistema de validación de usuarios para asegurar la integridad y privacidad de la información.  
+    - Proveer una interfaz amigable y accesible que permita a los usuarios gestionar y manipular sus documentos PDF de manera efectiva.
 
 6. <span id="_Toc52661357" class="anchor"></span>**Referentes teóricos**
     Diagramas de Casos de Uso, Diagrama de Clases, Diagrama de Componentes y Arquitectura.
