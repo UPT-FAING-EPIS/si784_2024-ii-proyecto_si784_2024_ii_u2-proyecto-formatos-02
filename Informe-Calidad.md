@@ -1,8 +1,10 @@
 <div align="center">
   <img src="./media/logo-upt.png" alt="Escudo UPT" style="width:1.088in;height:1.46256in" />
   
-  # **UNIVERSIDAD PRIVADA DE TACNA**  
+  # **UNIVERSIDAD PRIVADA DE TACNA**
+
   ## **FACULTAD DE INGENIERÍA**  
+  
   ### **Escuela Profesional de Ingeniería de Sistemas**  
   
   ## **Proyecto: "MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS"**  
@@ -27,7 +29,7 @@ Sistema *{MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS}*
 
 Informe de Factibilidad
 
-Versión *{1.0}*
+Versión *{2.0}*
 
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
