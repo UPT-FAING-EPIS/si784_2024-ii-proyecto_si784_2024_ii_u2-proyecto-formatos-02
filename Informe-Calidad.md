@@ -24,7 +24,7 @@
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 <div align="center">
-  # **Sistema: "MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS"**
+  Sistema: "MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS"**
 
   ## **Informe de Factibilidad**
 
