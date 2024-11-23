@@ -4,25 +4,26 @@
 
 ![./media/media/image1.png](./media/logo-upt.png)
 
-**UNIVERSIDAD PRIVADA DE TACNA**
+<p align="center">
 
-**FACULTAD DE INGENIERIA**
+    **UNIVERSIDAD PRIVADA DE TACNA**  
+    **FACULTAD DE INGENIERIA**  
+    **Escuela Profesional de Ingeniería de Sistemas**  
 
-**Escuela Profesional de Ingeniería de Sistemas**
+    **Proyecto * MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS ***  
 
-**Proyecto * MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS ***
+    Curso: *Calidad y prueba de software*  
+    Docente: *Ing. Patrick Jose Cuadros Quiroga*  
 
-Curso: *Calidad y prueba de software*
+    Integrantes:  
 
-Docente: *Ing. Patrick Jose Cuadros Quiroga*
+    - Mario Antonio Flores Ramos (2018000597)  
+    - Erick Javier Salinas Condori (2020069046)  
+    - Fiorela Milady Ticahuanca Cutipa (2020068765)  
 
-Integrantes:
-
-***{Apellidos y nombres del estudiante (código universitario)}***
-
-**Tacna – Perú**
-
-*** 2024 ***
+    **Tacna – Perú**  
+    2024  
+</p>
 
 **  
 **
