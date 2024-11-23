@@ -106,9 +106,15 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
 4. <span id="_Toc52661349" class="anchor"></span>**Planteamiento del problema**
 
-    4.1. <span id="_Toc52661350" class="anchor"></span>Problema
+    4.1. <span id="_Toc52661350" class="anchor"></span>Problema: 
+    
+    El manejo y la manipulación de archivos PDF presentan desafíos para muchos usuarios, especialmente cuando se requiere combinar o dividir documentos de manera eficiente. Las herramientas tradicionales o la falta de un sistema especializado dificultan la gestión de archivos, resultando en procesos tediosos y propensos a errores. Además, la ausencia de una plataforma que ofrezca funcionalidades avanzadas de manera intuitiva afecta la productividad y la experiencia del usuario.
 
-    4.2. <span id="_Toc52661351" class="anchor"></span>Justificación
+    Esta situación genera ineficiencias, pérdida de tiempo y una experiencia poco satisfactoria al trabajar con documentos PDF. Por lo tanto, es necesario contar con una aplicación que proporcione una solución centralizada y fácil de usar, que permita gestionar y manipular archivos PDF de forma segura, eficiente y adaptable a las necesidades de los usuarios.
+
+    4.2. <span id="_Toc52661351" class="anchor"></span>Justificación:
+
+    
 
     4.3. <span id="_Toc52661352" class="anchor"></span>
 
