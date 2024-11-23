@@ -149,6 +149,22 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 6. <span id="_Toc52661357" class="anchor"></span>**Referentes teóricos**
     Diagramas de Casos de Uso, Diagrama de Clases, Diagrama de Componentes y Arquitectura.
 
+    ## Diagrama de Caso de Uso: 
+
+
+
+    ## Diagrama de Clases: 
+
+
+
+    ## Diagrama de Componentes:
+
+
+
+    ## Diagrama de Arquitectura:
+
+
+
 7. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
 
     7.1.   Tecnología de información 
