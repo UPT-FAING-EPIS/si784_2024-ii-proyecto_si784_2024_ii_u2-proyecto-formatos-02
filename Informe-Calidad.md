@@ -152,15 +152,22 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     ### **Diagrama de Caso de Uso:** 
 
+    ![image](https://github.com/user-attachments/assets/45248127-4814-4563-b955-fb643fd90b9d)
+
     ### **Diagrama de Clases:** 
 
-    ### **Diagrama de Componentes:** 
+    ![image](https://github.com/user-attachments/assets/8a1b85f7-6883-49e0-ad3e-8a4462c5e263)
+
+    ### **Diagrama de Componentes:**
+
+    ![image](https://github.com/user-attachments/assets/ee9f7230-e433-4985-919a-d7e404923c1b)
 
     ### **Diagrama de Arquitectura:**
 
+    ![image](https://github.com/user-attachments/assets/7b7ed41d-394d-400b-bbdd-48b278e1eb89)
 
 
-7. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
+6. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
 
     7.1.   Tecnología de información 
 
@@ -188,5 +195,5 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
     
     - **Snyk**: Se utilizó Snyk para identificar vulnerabilidades en las dependencias de terceros, ofreciendo soluciones y actualizaciones a las bibliotecas vulnerables, mejorando la seguridad general de la aplicación.
 
-8. Cronograma
+7. Cronograma
    (personas, tiempo, otros recursos) Basado en las observaciones que la herramienta SonarQube les informara         sobre la aplicación, a fin de reducir la deuda tecnica, vulnerabilidades, fallas, etc. a 0.
