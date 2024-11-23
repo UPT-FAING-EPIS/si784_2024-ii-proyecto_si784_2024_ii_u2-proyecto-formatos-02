@@ -100,6 +100,10 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
 3. <span id="_Toc52661348" class="anchor"></span>**Autores**
 
+  - Mario Antonio Flores Ramos (2018000597)
+  - Erick Javier Salinas Condori (2020069046)
+  - Fiorela Milady Ticahuanca Cutipa (2020068765)
+
 4. <span id="_Toc52661349" class="anchor"></span>**Planteamiento del problema**
 
     4.1. <span id="_Toc52661350" class="anchor"></span>Problema
