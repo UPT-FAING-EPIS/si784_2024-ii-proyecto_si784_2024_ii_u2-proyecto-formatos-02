@@ -149,19 +149,19 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 6. <span id="_Toc52661357" class="anchor"></span>**Referentes teóricos**
     Diagramas de Casos de Uso, Diagrama de Clases, Diagrama de Componentes y Arquitectura.
 
-    ## Diagrama de Caso de Uso: 
+    # Diagrama de Caso de Uso: 
 
 
 
-    ## Diagrama de Clases: 
+    # Diagrama de Clases: 
 
 
 
-    ## Diagrama de Componentes:
+    # Diagrama de Componentes:
 
 
 
-    ## Diagrama de Arquitectura:
+    # Diagrama de Arquitectura:
 
 
 
