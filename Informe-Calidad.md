@@ -147,6 +147,7 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
     - Proveer una interfaz amigable y accesible que permita a los usuarios gestionar y manipular sus documentos PDF de manera efectiva.
 
 6. <span id="_Toc52661357" class="anchor"></span>**Referentes teóricos**
+
     Diagramas de Casos de Uso, Diagrama de Clases, Diagrama de Componentes y Arquitectura.
 
     ### **Diagrama de Caso de Uso:** 
@@ -162,6 +163,16 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 7. Desarrollo de la propuesta (Aqui va el analisis de su aplicación con SonarQube y Snyk, para que les muestre todos los aspectos a mejorar de su aplicación)
 
     7.1.   Tecnología de información 
+
+    **SonarQube**: Es una herramienta de análisis estático de código que permite revisar automáticamente la calidad del código fuente de la aplicación. SonarQube analiza la base de código y genera reportes sobre posibles errores, vulnerabilidades, deuda técnica, código duplicado y áreas donde se pueden aplicar mejoras. Además, realiza un seguimiento continuo de la calidad del código, integrándose con herramientas de CI/CD como GitHub Actions.
+
+    **Snyk**: Snyk es una plataforma de seguridad que se enfoca en la gestión de vulnerabilidades en las dependencias y bibliotecas de código abierto. Durante el análisis, se identifican posibles vulnerabilidades en las dependencias de terceros, lo que permite corregir problemas de seguridad antes de que afecten la producción.
+
+    **ASP.NET Core y C#**: El proyecto está desarrollado en ASP.NET Core utilizando el lenguaje de programación C#. Esto permite implementar una aplicación web robusta y escalable, con soporte para múltiples plataformas.
+
+    **GitHub y GitHub Actions**: Se utilizó GitHub como sistema de control de versiones y plataforma de colaboración. GitHub Actions se empleó para la integración continua, ejecutando automáticamente los análisis de calidad del código con SonarQube y los análisis de seguridad con Snyk en cada push al repositorio.
+
+    **MariaDB/MySQL**: Para la base de datos se utilizó MariaDB, que es una bifurcación de MySQL. Esta tecnología permitió gestionar el almacenamiento de datos de manera eficiente, con soporte para transacciones y consultas complejas.
 
     7.2.   Metodología, técnicas usadas
 
