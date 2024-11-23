@@ -31,8 +31,6 @@
   ## **Versión: "2.0"**
 </div>
 
----
-
 ## **CONTROL DE VERSIONES**
 
 | **Versión** | **Hecha por**                           | **Revisada por**                          | **Aprobada por**              | **Fecha**     | **Motivo**  |
@@ -40,8 +38,6 @@
 | 2.0         | Erick Salinas, Mario Flores, Fiorela Ticahuanca | Erick Salinas, Mario Flores, Fiorela Ticahuanca | Patrick Cuadros | 23/11/2024 | Versión 2   |
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
-
-
 
 
 # **INDICE GENERAL**
