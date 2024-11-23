@@ -5,21 +5,17 @@
   ## **FACULTAD DE INGENIERÍA**  
   ### **Escuela Profesional de Ingeniería de Sistemas**  
   
-  ---
 
   ## **Proyecto: "MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS"**  
   
   **Curso:** Calidad y prueba de software  
   **Docente:** Ing. Patrick Jose Cuadros Quiroga  
 
-  ---
 
   ### **Integrantes:**
   - Mario Antonio Flores Ramos (2018000597)
   - Erick Javier Salinas Condori (2020069046)
   - Fiorela Milady Ticahuanca Cutipa (2020068765)
-
-  ---
 
   **Tacna – Perú**  
   2024
