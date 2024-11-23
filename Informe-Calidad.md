@@ -88,6 +88,8 @@ The report presents the improvement of the PDF Solutions application, designed t
 
 1. <span id="_Toc52661346" class="anchor"></span>**Antecedentes o introducción**
 
+
+
 2. <span id="_Toc52661347" class="anchor"></span>**Titulo**
 
 3. <span id="_Toc52661348" class="anchor"></span>**Autores**
