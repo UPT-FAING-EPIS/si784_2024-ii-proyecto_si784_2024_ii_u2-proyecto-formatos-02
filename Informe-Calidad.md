@@ -44,7 +44,12 @@
 
 Resumen
 
+El informe presenta el mejoramiento de la aplicación PDF Solutions, diseñada para gestionar documentos PDF de manera eficiente y segura. La aplicación incluye un sistema de login y suscripciones, con diferentes niveles de acceso para los usuarios. Su enfoque está en facilitar tareas como combinar y dividir archivos PDF, resolviendo problemas comunes de manipulación de documentos. Con opciones de suscripción, los usuarios acceden a funciones avanzadas según sus necesidades. El objetivo es ofrecer una solución centralizada, accesible y optimizada, mejorando la experiencia de usuario y simplificando procesos manuales en el manejo de archivos PDF.
+
 Abstract
+
+The report presents the improvement of the PDF Solutions application, designed to efficiently and securely manage PDF documents. The application includes a login system and subscriptions, offering different access levels for users. It focuses on simplifying tasks such as combining and splitting PDF files, solving common document handling issues. With subscription options, users can access advanced features based on their needs. The goal is to provide a centralized, accessible, and optimized solution, improving the user experience and simplifying manual processes in PDF file management.
+
 
 [1. Antecedentes o introducción](#_Toc52661346)
 
