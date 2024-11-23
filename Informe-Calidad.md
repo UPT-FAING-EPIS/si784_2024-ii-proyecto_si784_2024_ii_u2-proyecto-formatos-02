@@ -118,7 +118,18 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     Contar con una solución centralizada y automatizada reduce la complejidad y el tiempo necesario para gestionar archivos PDF, permitiendo a los usuarios realizar estas tareas de manera rápida y precisa. Esto no solo mejora la productividad, sino que también ofrece una experiencia más satisfactoria y accesible, adaptándose a las diversas necesidades de los usuarios. Al brindar un sistema confiable y fácil de usar, se contribuye a la optimización de procesos y a la mejora general de la gestión de documentos PDF.
 
-    4.3. <span id="_Toc52661352" class="anchor"></span>
+    4.3. <span id="_Toc52661352" class="anchor"></span>Alcance:
+
+    Este documento se enfoca en el mejoramiento de la aplicación PDF Solutions, implementando mejoras en la vista lógica del sistema y asegurando una experiencia de usuario eficiente para la gestión de archivos PDF. Se describen los aspectos fundamentales de las funcionalidades principales, omitiendo detalles específicos de las vistas de procesos.
+
+    - **Gestión de archivos PDF**: Implementación de funciones para juntar y cortar archivos PDF, permitiendo a los usuarios manipular documentos de manera sencilla y          eficiente.  
+    - **Sistema de autenticación y suscripciones**: Desarrollo de un sistema de login y gestión de suscripciones, proporcionando acceso controlado a funciones avanzadas según el tipo de suscripción.  
+    - **Experiencia de usuario optimizada**: Creación de una interfaz de usuario intuitiva y fácil de usar para mejorar la interacción con la aplicación.  
+    - **Administración de suscripciones**: Gestión de los niveles de acceso y suscripciones de los usuarios, facilitando la administración y actualización de sus permisos.  
+    - **Seguridad y privacidad**: Garantizar la integridad y confidencialidad de los datos del usuario, ofreciendo un sistema de autenticación seguro.  
+    - **Vista lógica**: Gestión de usuarios, manipulación de archivos PDF, administración de suscripciones y funcionalidades de control de acceso.  
+    - **Vista de desarrollo**: Implementación del patrón MVC con C# y ASP.NET Core, estructura organizada del código y uso de buenas prácticas de programación.  
+    - **Vista física**: Despliegue de la aplicación en un entorno web, asegurando la compatibilidad y el rendimiento en servidores y bases de datos.
 
 5. <span id="_Toc52661356" class="anchor"></span>**Objetivos**
 
