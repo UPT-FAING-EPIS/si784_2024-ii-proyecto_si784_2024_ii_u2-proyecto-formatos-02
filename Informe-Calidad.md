@@ -114,7 +114,9 @@ MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS
 
     4.2. <span id="_Toc52661351" class="anchor"></span>Justificación:
 
-    
+    La mejora de la aplicación PDF Solutions es fundamental para proporcionar a los usuarios una herramienta eficiente y segura en la gestión de archivos PDF. La implementación de funcionalidades como el login, suscripciones y opciones avanzadas para juntar y cortar PDF permite optimizar la experiencia del usuario y facilita la manipulación de documentos de manera efectiva.
+
+    Contar con una solución centralizada y automatizada reduce la complejidad y el tiempo necesario para gestionar archivos PDF, permitiendo a los usuarios realizar estas tareas de manera rápida y precisa. Esto no solo mejora la productividad, sino que también ofrece una experiencia más satisfactoria y accesible, adaptándose a las diversas necesidades de los usuarios. Al brindar un sistema confiable y fácil de usar, se contribuye a la optimización de procesos y a la mejora general de la gestión de documentos PDF.
 
     4.3. <span id="_Toc52661352" class="anchor"></span>
 
