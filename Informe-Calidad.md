@@ -5,12 +5,10 @@
   ## **FACULTAD DE INGENIERÍA**  
   ### **Escuela Profesional de Ingeniería de Sistemas**  
   
-
   ## **Proyecto: "MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS"**  
   
   **Curso:** Calidad y prueba de software  
   **Docente:** Ing. Patrick Jose Cuadros Quiroga  
-
 
   ### **Integrantes:**
   - Mario Antonio Flores Ramos (2018000597)
@@ -25,7 +23,7 @@
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-Sistema *{Nombre del Sistema}*
+Sistema *{MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS}*
 
 Informe de Factibilidad
 
@@ -37,6 +35,8 @@ Versión *{1.0}*
 |1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+
 
 # **INDICE GENERAL**
 
