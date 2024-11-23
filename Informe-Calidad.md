@@ -21,22 +21,26 @@
   2024
 </div>
 
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
+<div align="center">
+  # **Sistema: "MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS"**
+
+  ## **Informe de Factibilidad**
+
+  ## **Versión: "2.0"**
+</div>
+
+---
+
+## **CONTROL DE VERSIONES**
+
+| **Versión** | **Hecha por**                           | **Revisada por**                          | **Aprobada por**              | **Fecha**     | **Motivo**  |
+|:-----------:|:----------------------------------------:|:-----------------------------------------:|:-----------------------------:|:-------------:|:-----------:|
+| 2.0         | Erick Salinas, Mario Flores, Fiorela Ticahuanca | Erick Salinas, Mario Flores, Fiorela Ticahuanca | Patrick Cuadros | 23/11/2024 | Versión 2   |
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-Sistema *{MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS}*
-
-Informe de Factibilidad
-
-Versión *{2.0}*
-
-|CONTROL DE VERSIONES||||||
-| :-: | :- | :- | :- | :- | :- |
-|Versión|Hecha por|Revisada por|Aprobada por|Fecha|Motivo|
-|1\.0|MPV|ELV|ARV|10/10/2020|Versión Original|
-
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 
 
