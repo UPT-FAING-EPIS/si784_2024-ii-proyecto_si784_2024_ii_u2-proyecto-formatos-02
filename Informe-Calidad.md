@@ -10,11 +10,11 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *{Nombre de Proyecto}***
+**Proyecto * MEJORAMIENTO DE LA APLICACIÓN PDF SOLUTIONS ***
 
-Curso: *{Nombre de Asignatura}*
+Curso: *Calidad y prueba de software*
 
-Docente: *{Nombre de Docente}*
+Docente: *Ing. Patrick Jose Cuadros Quiroga*
 
 Integrantes:
 
@@ -22,7 +22,7 @@ Integrantes:
 
 **Tacna – Perú**
 
-***{Año}***
+*** 2024 ***
 
 **  
 **
