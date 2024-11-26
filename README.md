@@ -3,7 +3,7 @@
 # proyecto-formatos-02
 
 <div align="center">
-## Proyecto "Sistema de Gestión Bibliotecaria y Préstamo de Libros"
+## Proyecto "DO-LIST"
 
 **INTEGRANTES**  
 **Erick Ayma**  
@@ -14,7 +14,6 @@
 
 ## Descripción del Proyecto
 
-Este proyecto consiste en el desarrollo de un sistema de gestión bibliotecaria y préstamo de libros que optimiza la administración de recursos bibliográficos. La plataforma permitirá a los bibliotecarios gestionar eficientemente los libros y sus préstamos, al tiempo que facilitará el acceso a la información para los usuarios. Mediante la digitalización de recursos y una interfaz intuitiva, se busca fomentar el uso de la biblioteca, incrementar la participación comunitaria en actividades culturales y educativas, y liberar al personal para que se enfoque en iniciativas que promuevan la lectura.
 
 ---
 
@@ -28,13 +27,6 @@ Este proyecto consiste en el desarrollo de un sistema de gestión bibliotecaria 
 ---
 
 ## Funcionalidades Principales
-
-- **Gestión de usuarios**: Registro, edición y eliminación de usuarios del sistema.
-- **Gestión de libros**: Agregar, modificar y eliminar libros en el sistema.
-- **Gestión de préstamos**: Registrar, actualizar y finalizar préstamos de libros.
-- **Gestión de autores, editoriales y materias**: Registrar, editar y eliminar autores, editoriales y materias asociadas a los libros.
-- **Generación de reportes**: Generación de archivos PDF relacionados con los préstamos y el catálogo de libros.
-- **Carga de archivos**: Cargar y gestionar archivos relacionados con los libros, como imágenes de portada o PDFs.
 
 
 </div>
