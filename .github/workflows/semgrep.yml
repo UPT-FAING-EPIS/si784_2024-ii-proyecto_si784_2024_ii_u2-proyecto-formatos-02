@@ -1,5 +1,4 @@
 name: Semgrep Scan
-
 on:
   push:
     branches:
@@ -51,12 +50,18 @@ jobs:
         mkdir -p project/informes/segrem  # Crear la carpeta si no existe
         mv semgrep-report.html project/informes/segrem/  # Mover el reporte HTML a la carpeta
 
-    # Paso 9: Subir los reportes (SARIF y HTML) al repositorio
-    - name: Commit and push SARIF and HTML reports to GitHub
+    # Paso 9: Configurar Git para publicar en GitHub Pages
+    - name: Configure Git for GitHub Pages
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-        git add project/informes/segrem/reporte.sarif  # Añadir el archivo SARIF generado
-        git add project/informes/segrem/semgrep-report.html  # Añadir el archivo HTML generado
-        git commit -m "Add Semgrep reports (SARIF and HTML)"  # Realizar el commit
-        git push  # Realizar el push de los reportes al repositorio
+
+    # Paso 10: Publicar el reporte HTML en la rama gh-pages
+    - name: Publish report to GitHub Pages
+      run: |
+        git fetch origin gh-pages  # Fetch la rama gh-pages
+        git checkout gh-pages || git checkout --orphan gh-pages  # Si no existe, crea una nueva rama
+        cp project/informes/segrem/semgrep-report.html semgrep-report.html  # Copiar el reporte HTML generado
+        git add semgrep-report.html  # Añadir el archivo HTML a la rama gh-pages
+        git commit -m "Publishing Semgrep report as semgrep-report.html" || echo "No changes to commit"  # Si no hay cambios, no hacer commit
+        git push origin gh-pages  # Subir los cambios a la rama gh-pages
