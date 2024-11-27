@@ -267,6 +267,16 @@ class AuthControllerTest extends TestCase
         $this->assertStringContainsString('<form method="POST" action="/login">', $output, 'La vista de login no contiene el formulario esperado.');
     }
 
+    /**
+     * Verifica que un usuario autenticado sea redirigido al dashboard al intentar registrarse.
+     */
+    public function testShowRegisterRedirectsIfAuthenticated()
+    {
+        $_SESSION['user'] = 1;
 
+        $this->authController->showRegister();
+
+        $this->assertEquals('/dashboard', $this->authController->redirect);
+    }
 
 }
