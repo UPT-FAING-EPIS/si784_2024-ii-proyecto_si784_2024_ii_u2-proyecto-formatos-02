@@ -1,0 +1,59 @@
+
+ app\models\taskmodel::deletetasks
+iC:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\TaskModel.php( (("1*—
+1* *(IX
+V
+* *(
+%1"__id*>
+
+__unknown_file ("* 
+app\models\taskmodel"
+connÅ
+* *(H
+%2*"
+
+__unknown_file (
+
+%1*@
+
+__unknown_file ($"
+ DELETE FROM tasks WHERE id = :id2prepare?
+=
+* *(H
+$stmt"__id*"
+
+__unknown_file (
+
+%2
++ +(+
+%3"$Arrayä
+á
++ +(+
+%4"__mapSet*"
+
+__unknown_file (
+
+%3*"
+
+__unknown_file (
+id*#
+
+__unknown_file (
+
+$idfd
++ +(,
+%5*%
+
+__unknown_file (	
+
+$stmt*"
+
+__unknown_file (
+
+%32execute"
++ +(-
+
+%5:
+( (("
+$idB
+app\models\taskmodelH

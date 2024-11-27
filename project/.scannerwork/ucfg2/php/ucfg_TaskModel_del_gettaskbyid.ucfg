@@ -1,0 +1,58 @@
+
+!app\models\taskmodel::gettaskbyids
+iC:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\TaskModel.php. .("1*Ê
+1	0 0(³X
+V
+0 0(
+%1"__id*>
+
+__unknown_file ("* 
+app\models\taskmodel"
+connñî
+	0 0(²
+%2*"
+
+__unknown_file (
+
+%1*­
+
+__unknown_file (
+ŠSELECT tasks.*, categories.name AS category_name FROM tasks LEFT JOIN categories ON tasks.category_id = categories.id WHERE tasks.id = :id2prepare@
+>
+	0 0(²
+$stmt"__id*"
+
+__unknown_file (
+
+%2Œ
+1 1($
+%3*%
+
+__unknown_file (	
+
+$stmt*#
+
+__unknown_file (
+:id*#
+
+__unknown_file (
+
+$id2	bindparamB@
+2 2(
+%4*%
+
+__unknown_file (	
+
+$stmt2execute@>
+3 3(
+%5*%
+
+__unknown_file (	
+
+$stmt2fetch"
+3 3(
+
+%5:
+.  .(#
+$idB
+app\models\taskmodelH

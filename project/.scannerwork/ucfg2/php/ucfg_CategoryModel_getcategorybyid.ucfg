@@ -1,0 +1,58 @@
+
+)app\models\categorymodel::getcategorybyidw
+mC:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\CategoryModel.php (#"1*ä
+1 (P\
+Z
+ (
+%1"__id*B
+
+__unknown_file (&*$
+app\models\categorymodel"
+conn‰†
+ (O
+%2*"
+
+__unknown_file (
+
+%1*G
+
+__unknown_file (+)
+'SELECT * FROM categories WHERE id = :id2prepare?
+=
+ (O
+$stmt"__id*"
+
+__unknown_file (
+
+%2Œ
+   ($
+%3*%
+
+__unknown_file (	
+
+$stmt*#
+
+__unknown_file (
+:id*#
+
+__unknown_file (
+
+$id2	bindparamB@
+! !(
+%4*%
+
+__unknown_file (	
+
+$stmt2execute@>
+" "(
+%5*%
+
+__unknown_file (	
+
+$stmt2fetch"
+" "(
+
+%5:
+$ ('
+$idB
+app\models\categorymodelH

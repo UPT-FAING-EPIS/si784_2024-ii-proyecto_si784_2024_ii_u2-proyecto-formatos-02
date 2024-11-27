@@ -1,0 +1,59 @@
+
+(app\models\categorymodel::deletecategoryw
+mC:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\CategoryModel.php< <(""1*Û
+1> >(N\
+Z
+> >(
+%1"__id*B
+
+__unknown_file (&*$
+app\models\categorymodel"
+conn‡„
+> >(M
+%2*"
+
+__unknown_file (
+
+%1*E
+
+__unknown_file ()'
+%DELETE FROM categories WHERE id = :id2prepare?
+=
+> >(M
+$stmt"__id*"
+
+__unknown_file (
+
+%2
+? ?(+
+%3"$ArrayŠ
+‡
+? ?(+
+%4"__mapSet*"
+
+__unknown_file (
+
+%3*"
+
+__unknown_file (
+id*#
+
+__unknown_file (
+
+$idfd
+? ?(,
+%5*%
+
+__unknown_file (	
+
+$stmt*"
+
+__unknown_file (
+
+%32execute"
+? ?(-
+
+%5:
+<# <(&
+$idB
+app\models\categorymodelH
