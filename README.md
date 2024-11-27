@@ -28,6 +28,6 @@
 
 ## Funcionalidades Principales
 
-## Composer.
+## Package :https://packagist.org/packages/thegoat/project?query=thegoat%2Fproject
 
 </div>
