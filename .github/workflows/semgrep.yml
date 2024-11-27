@@ -24,7 +24,7 @@ jobs:
         -v "${{ github.workspace }}/project:/src" \
         -v "${{ github.workspace }}/project/informes/segrem:/reports" \
         returntocorp/semgrep \
-        semgrep --config "p/php" /src/app/Controllers/TaskController.php --sarif --output /reports/reporte.sarif
+        semgrep --config "p/php" /src/app/ --sarif --output /reports/reporte.sarif
 
     - name: Commit and push SARIF report to GitHub
       run: |
