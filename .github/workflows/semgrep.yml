@@ -3,13 +3,13 @@ name: Semgrep Scan
 on:
   push:
     branches:
-      - main   # Se activa en push a la rama 'main', puedes cambiar la rama si lo deseas
+      - main   
     paths:
-      - '**/*.php'  # Solo se activará si hay cambios en archivos PHP
+      - '**/*'  
 
 jobs:
   semgrep-scan:
-    runs-on: ubuntu-latest  # Usa el sistema operativo de tu preferencia
+    runs-on: ubuntu-latest 
 
     steps:
     - name: Checkout the code
