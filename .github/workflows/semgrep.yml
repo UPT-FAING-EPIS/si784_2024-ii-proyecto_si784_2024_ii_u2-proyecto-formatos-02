@@ -1,0 +1,33 @@
+name: Semgrep Scan
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  semgrep-scan:
+    runs-on: ubuntu-latest  # o windows-latest si necesitas Windows
+
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2
+
+    - name: Set up Docker
+      uses: docker/setup-buildx-action@v2
+
+    - name: Run Semgrep
+      run: |
+        docker run --rm \
+        -v "${{ github.workspace }}/project:/src" \
+        -v "${{ github.workspace }}/project/informes/segrem:/reports" \
+        returntocorp/semgrep \
+        semgrep --config "p/php" /src/app/Controllers/TaskController.php --sarif --output /reports/reporte.sarif
+
+    - name: Upload SARIF report to GitHub
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: ${{ github.workspace }}/project/informes/segrem/reporte.sarif
