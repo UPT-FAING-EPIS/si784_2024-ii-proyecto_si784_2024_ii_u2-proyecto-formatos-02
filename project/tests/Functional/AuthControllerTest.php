@@ -234,4 +234,19 @@ class AuthControllerTest extends TestCase
         $this->assertEquals('/login', $this->authController->redirect);
         $this->assertEquals("Has cerrado sesión exitosamente.", $_SESSION['success']);
     }
+
+    // PRUEBAS DE INTEGRACIÓN
+    /**
+     * Verifica que un usuario autenticado sea redirigido al dashboard al acceder al login.
+     */
+    public function testShowLoginRedirectsIfAuthenticated()
+    {
+        $_SESSION['user'] = 1;
+
+        // Ejecutar el método
+        $this->authController->showLogin();
+
+        // Verificar redirección
+        $this->assertEquals('/dashboard', $this->authController->redirect);
+    }
 }
