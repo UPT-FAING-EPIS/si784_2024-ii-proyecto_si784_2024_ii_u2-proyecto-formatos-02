@@ -98,7 +98,41 @@ class AuthControllerTest extends TestCase
         $this->assertEquals('/login', $this->authController->redirect);
     }
 
+    /**
+     * Verifica que un usuario puede registrarse correctamente con datos válidos.
+     */
+    public function testRegisterWithValidData()
+    {
+        $data = [
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+            'password' => 'password',
+        ];
 
+        // Simular que el correo no existe
+        $this->mockUserModel->shouldReceive('findUserByEmail')
+            ->once()
+            ->with($data['email'])
+            ->andReturn(null);
+
+        // Simular creación exitosa del usuario
+        $this->mockUserModel->shouldReceive('createUser')
+            ->once()
+            ->with(m::on(function ($input) use ($data) {
+                return $input['name'] === $data['name'] &&
+                       $input['email'] === $data['email'] &&
+                       password_verify($data['password'], $input['password']);
+            }))
+            ->andReturn(true);
+
+        // Ejecutar el método
+        $result = $this->authController->register($data);
+
+        // Verificar que el registro fue exitoso
+        $this->assertTrue($result);
+        $this->assertEquals("Usuario registrado con éxito. Por favor, inicia sesión.", $_SESSION['success']);
+        $this->assertEquals('/login', $this->authController->redirect);
+    }
 
 
 }
