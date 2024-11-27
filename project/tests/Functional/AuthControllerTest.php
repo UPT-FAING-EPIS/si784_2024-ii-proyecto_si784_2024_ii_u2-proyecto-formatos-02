@@ -249,4 +249,24 @@ class AuthControllerTest extends TestCase
         // Verificar redirección
         $this->assertEquals('/dashboard', $this->authController->redirect);
     }
+
+    /**
+     * Verifica que la vista de login sea generada correctamente para un usuario no autenticado.
+     */
+    public function testShowLoginIncludesLoginView()
+    {
+        unset($_SESSION['user']);
+
+        // Capturar la salida generada por el método
+        ob_start();
+        $this->authController->showLogin();
+        $output = ob_get_clean();
+
+        // Verificar contenido relevante en la vista de login
+        $this->assertStringContainsString('<h1>Login</h1>', $output, 'La vista de login no contiene el título esperado.');
+        $this->assertStringContainsString('<form method="POST" action="/login">', $output, 'La vista de login no contiene el formulario esperado.');
+    }
+
+
+
 }
