@@ -97,4 +97,30 @@ class UserModelTest extends TestCase
 
         $this->assertFalse($result, "El usuario fue creado a pesar de faltar campos obligatorios.");
     }
+
+    // Pruebas de Integración
+
+    /**
+     * Verifica que un usuario pueda ser encontrado por su correo electrónico.
+     */
+    public function testFindUserByEmail()
+    {
+        $testEmail = 'marioaa' . uniqid() . '@gmail.com'; // Correo único
+        $testPassword = password_hash("12345", PASSWORD_BCRYPT);
+
+        // Crear el usuario con el correo único
+        $this->userModel->createUser([
+            'name' => 'Test User',
+            'email' => $testEmail,
+            'password' => $testPassword,
+        ]);
+
+        // Buscar al usuario por correo electrónico
+        $user = $this->userModel->findUserByEmail($testEmail);
+
+        // Verificar que el usuario sea encontrado
+        $this->assertNotNull($user, "El usuario no fue encontrado.");
+        $this->assertEquals($testEmail, $user['email'], "El correo del usuario no coincide.");
+    }
+
 }
