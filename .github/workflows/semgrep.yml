@@ -3,20 +3,20 @@ name: Semgrep Scan
 on:
   push:
     branches:
-      - main   # Se activa cuando se hace un push a la rama 'main'
+      - main   
     paths:
-      - '**/*'  # Se activa cuando se modifican archivos dentro del repositorio
+      - '**/*'
 
 jobs:
   semgrep-scan:
-    runs-on: ubuntu-latest  # Ejecutar en un entorno Ubuntu
+    runs-on: ubuntu-latest  # Usar Ubuntu para ejecutar la acción
 
     steps:
     - name: Checkout the code
-      uses: actions/checkout@v2  # Este paso descarga el código de tu repositorio
+      uses: actions/checkout@v2  # Descargar el código del repositorio
 
     - name: Set up Docker
-      uses: docker/setup-buildx-action@v2  # Prepara Docker para ejecutar el contenedor
+      uses: docker/setup-buildx-action@v2  # Preparar Docker para ejecutar el contenedor
 
     - name: Run Semgrep
       run: |
@@ -25,14 +25,22 @@ jobs:
         -v "${{ github.workspace }}/project/informes/segrem:/reports" \
         returntocorp/semgrep \
         semgrep --config "p/php" /src/app \
-        --sarif --output /reports/reporte.sarif \
-        --html --output /reports/reporte.html  # Genera ambos reportes SARIF y HTML
+        --sarif --output /reports/reporte.sarif  # Solo generar reporte SARIF
+
+    - name: Install sarif-html to convert SARIF to HTML
+      run: |
+        sudo apt-get install -y nodejs npm  # Instalar Node.js y npm
+        sudo npm install -g sarif-html  # Instalar herramienta de conversión SARIF a HTML
+
+    - name: Convert SARIF to HTML
+      run: |
+        sarif-html /reports/reporte.sarif /reports/reporte.html  # Convertir SARIF a HTML
 
     - name: Commit and push SARIF and HTML reports to GitHub
       run: |
-        git config --global user.name "github-actions"  # Configura el nombre del usuario para el commit
-        git config --global user.email "github-actions@github.com"  # Configura el email del usuario
-        git add project/informes/segrem/reporte.sarif  # Añade el archivo SARIF generado
-        git add project/informes/segrem/reporte.html  # Añade el archivo HTML generado
-        git commit -m "Add Semgrep reports (SARIF and HTML)"  # Realiza el commit
-        git push  # Realiza un push para subir los reportes al repositorio
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add project/informes/segrem/reporte.sarif  # Añadir reporte SARIF
+        git add project/informes/segrem/reporte.html  # Añadir reporte HTML
+        git commit -m "Add Semgrep reports (SARIF and HTML)"  # Hacer commit de los reportes
+        git push  # Subir los reportes al repositorio
