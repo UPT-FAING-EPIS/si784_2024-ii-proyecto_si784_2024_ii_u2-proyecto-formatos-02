@@ -84,4 +84,17 @@ class UserModelTest extends TestCase
 
         $this->assertFalse($result, "Se creó un usuario con un correo duplicado.");
     }
+
+    /**
+     * Verifica que falle la creación de un usuario si faltan campos requeridos.
+     */
+    public function testCreateUserWithMissingFields()
+    {
+        $result = $this->userModel->createUser([
+            'name' => 'Test User',
+            'email' => '',  // Falta el correo
+        ]);
+
+        $this->assertFalse($result, "El usuario fue creado a pesar de faltar campos obligatorios.");
+    }
 }
