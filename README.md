@@ -28,6 +28,6 @@
 
 ## Funcionalidades Principales
 
-## Composer
+## Composer.
 
 </div>
