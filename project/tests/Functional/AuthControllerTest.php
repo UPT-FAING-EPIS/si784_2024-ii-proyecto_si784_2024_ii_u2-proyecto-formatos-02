@@ -279,4 +279,25 @@ class AuthControllerTest extends TestCase
         $this->assertEquals('/dashboard', $this->authController->redirect);
     }
 
+    /**
+     * Verifica que la vista de registro sea generada correctamente para un usuario no autenticado.
+     */
+    public function testShowRegisterIncludesRegisterView()
+    {
+        unset($_SESSION['user']);
+
+        ob_start();
+        $this->authController->showRegister();
+        $output = ob_get_clean();
+
+        $this->assertStringContainsString('<h1>Registro</h1>', $output, 'La vista de registro no contiene el título esperado.');
+        $this->assertStringContainsString('<form method="POST" action="/register">', $output, 'La vista de registro no contiene el formulario esperado.');
+    }
+
+    protected function tearDown(): void
+    {
+        m::close();
+        parent::tearDown();
+    }
+
 }
