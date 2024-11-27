@@ -53,6 +53,33 @@ class AuthControllerTest extends TestCase
         $this->assertEquals('/dashboard', $this->authController->redirect);
     }
 
+    /**
+     * AHORA Verifica que el inicio de sesión falle si se proporcionan credenciales incorrectas.
+     */      
+    public function testLoginWithInvalidCredentials()
+    {
+        $data = [
+            'email' => 'test@example.com',
+            'password' => 'wrongpassword'
+        ];
+
+        // Simular usuario existente con contraseña incorrecta
+        $this->mockUserModel->shouldReceive('findUserByEmail')
+            ->once()
+            ->with($data['email'])
+            ->andReturn([
+                'id' => 1,
+                'password' => password_hash('correctpassword', PASSWORD_BCRYPT),
+            ]);
+
+        // Ejecutar el método
+        $result = $this->authController->login($data);
+
+        // Verificar que el inicio de sesión falló
+        $this->assertFalse($result);
+        $this->assertEquals("Credenciales inválidas.", $_SESSION['error']);
+        $this->assertEquals('/login', $this->authController->redirect);
+    }
 
 
 }
