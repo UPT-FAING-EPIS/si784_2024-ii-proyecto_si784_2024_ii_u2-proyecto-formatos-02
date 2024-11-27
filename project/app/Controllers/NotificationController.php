@@ -8,9 +8,12 @@ class NotificationController
     protected $notificationModel;
     public $redirect; // Propiedad para almacenar redirecciones simuladas
 
-    public function __construct(NotificationModel $notificationModel)
+    public function __construct($notificationModel)
+
     {
+    
         $this->notificationModel = $notificationModel;
+    
     }
 
     // Método centralizado para redirecciones

@@ -28,19 +28,24 @@ if (isset($_GET['id'])) {
                 <textarea name="description" id="description"><?php echo htmlspecialchars($task['description']); ?></textarea><br><br>
 
                 <label for="category_id">Categoría:</label>
-                <select name="category_id" id="category_id">
-                    <?php foreach ($categories as $category): ?>
-                        <option value="<?php echo $category['id']; ?>" <?php echo $category['id'] == $task['category_id'] ? 'selected' : ''; ?>>
-                            <?php echo htmlspecialchars($category['name']); ?>
-                        </option>
-                    <?php endforeach; ?>
+                <select name="category_id">
+                    <?php if (!empty($categories) && is_array($categories)): ?>
+                        <?php foreach ($categories as $category): ?>
+                            <option value="<?= $category['id'] ?>" <?= $task['category_id'] == $category['id'] ? 'selected' : '' ?>>
+                                <?= htmlspecialchars($category['name'], ENT_QUOTES, 'UTF-8') ?>
+                            </option>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <option value="">No hay categorías disponibles</option>
+                    <?php endif; ?>
                 </select><br><br>
 
                 <label for="due_date">Fecha de vencimiento:</label>
                 <input type="date" name="due_date" id="due_date" value="<?php echo $task['due_date']; ?>"><br><br>
 
                 <label for="is_completed">Completada:</label>
-                <input type="checkbox" name="is_completed" id="is_completed" value="1" <?php echo $task['is_completed'] ? 'checked' : ''; ?>><br><br>
+                <input type="checkbox" name="is_completed" id="is_completed" value="1" 
+                    <?php echo !empty($task['is_completed']) ? 'checked' : ''; ?>>
 
                 <button type="submit">Actualizar Tarea</button>
             </form>

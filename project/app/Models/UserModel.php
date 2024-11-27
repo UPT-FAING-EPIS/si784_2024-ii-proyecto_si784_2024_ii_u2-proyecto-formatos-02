@@ -14,6 +14,7 @@ class UserModel extends Database
         return $user === false ? null : $user;
     }
     
+
     public function createUser($data)
     {
         // Verificar si los campos obligatorios están presentes
@@ -36,6 +37,7 @@ class UserModel extends Database
     
         // Ejecutar la consulta con los datos
         return $stmt->execute($data);
-    }   
+    }
+    
     
 }
