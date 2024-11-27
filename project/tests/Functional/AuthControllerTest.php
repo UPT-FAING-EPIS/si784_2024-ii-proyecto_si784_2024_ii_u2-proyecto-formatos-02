@@ -81,5 +81,24 @@ class AuthControllerTest extends TestCase
         $this->assertEquals('/login', $this->authController->redirect);
     }
 
+    /**
+     * Verifica que el método login gestione correctamente cuando faltan campos en los datos.
+     */
+    public function testLoginWithMissingFields()
+    {
+        $data = [
+            'email' => '',
+            'password' => ''
+        ];
+
+        $result = $this->authController->login($data);
+
+        $this->assertFalse($result);
+        $this->assertEquals("Por favor, complete todos los campos.", $_SESSION['error']);
+        $this->assertEquals('/login', $this->authController->redirect);
+    }
+
+
+
 
 }
