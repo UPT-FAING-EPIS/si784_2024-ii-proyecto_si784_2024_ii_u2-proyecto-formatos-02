@@ -11,10 +11,14 @@ class TaskController
     public $redirect; // Propiedad para almacenar redirecciones simuladas
 
     // Constructor con dependencia para los modelos
-    public function __construct(TaskModel $taskModel, CategoryModel $categoryModel)
+    public function __construct($taskModel, $categoryModel)
+
     {
+    
         $this->taskModel = $taskModel;
+    
         $this->categoryModel = $categoryModel;
+    
     }
 
     // Método para redirigir (real o simulado)
@@ -105,13 +109,23 @@ class TaskController
 
     public function showEditTaskForm($id)
     {
+        // Obtener la tarea por ID
         $task = $this->taskModel->getTaskById($id);
-
+    
+        // Si no se encuentra la tarea, muestra un mensaje de error y termina
         if (!$task) {
             echo "Tarea no encontrada.";
             return;
         }
-
+    
+        // Obtener las categorías (si es necesario en la vista)
+        $categories = $this->categoryModel->getCategories();
+    
+        // Inicializar valores predeterminados para claves de tarea
+        $task['is_completed'] = $task['is_completed'] ?? 0; // Valor predeterminado si no existe
+    
+        // Incluir la vista y pasar las variables necesarias
         include __DIR__ . '/../Views/edit_task.php';
     }
+    
 }

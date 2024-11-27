@@ -54,8 +54,8 @@ class AuthControllerTest extends TestCase
     }
 
     /**
-     * AHORA Verifica que el inicio de sesión falle si se proporcionan credenciales incorrectas.
-     */      
+     * Verifica que el inicio de sesión falle si se proporcionan credenciales incorrectas.
+     */
     public function testLoginWithInvalidCredentials()
     {
         $data = [
@@ -160,7 +160,6 @@ class AuthControllerTest extends TestCase
         $this->assertEquals('/register', $this->authController->redirect);
     }
 
-
     /**
      * Verifica que el registro falle si faltan campos obligatorios.
      */
@@ -221,6 +220,7 @@ class AuthControllerTest extends TestCase
         $this->assertTrue($result);
         $this->assertEquals('/login', $this->authController->redirect);
     }
+
     /**
      * Verifica que el logout funcione incluso cuando no hay una sesión activa.
      */
@@ -299,5 +299,4 @@ class AuthControllerTest extends TestCase
         m::close();
         parent::tearDown();
     }
-
 }
