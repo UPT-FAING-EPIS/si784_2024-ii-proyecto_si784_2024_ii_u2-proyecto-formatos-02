@@ -58,4 +58,30 @@ class UserModelTest extends TestCase
         $isPasswordCorrect = password_verify("securepassword", $user['password']);
         $this->assertTrue($isPasswordCorrect, "La contraseña no coincide.");
     }
+
+    /**
+     * Verifica que no se pueda crear un usuario con un correo duplicado.
+     */
+    public function testCreateUserWithDuplicateEmail()
+    {
+        // Correo único para evitar duplicados
+        $testEmail = "duplicateemail_" . uniqid() . "@gmail.com";
+        $testPassword = password_hash("password123", PASSWORD_BCRYPT);
+
+        // Crear el primer usuario con un correo único
+        $this->userModel->createUser([
+            'name' => 'User One',
+            'email' => $testEmail,
+            'password' => $testPassword,
+        ]);
+
+        // Intentar crear un segundo usuario con el mismo correo
+        $result = $this->userModel->createUser([
+            'name' => 'User Two',
+            'email' => $testEmail,
+            'password' => $testPassword,
+        ]);
+
+        $this->assertFalse($result, "Se creó un usuario con un correo duplicado.");
+    }
 }
