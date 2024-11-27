@@ -26,7 +26,7 @@
 
 ---
 
-## Funcionalidades Principales
+## Funcionalidades Principales.
 
 ## Package :https://packagist.org/packages/thegoat/project?query=thegoat%2Fproject
 
