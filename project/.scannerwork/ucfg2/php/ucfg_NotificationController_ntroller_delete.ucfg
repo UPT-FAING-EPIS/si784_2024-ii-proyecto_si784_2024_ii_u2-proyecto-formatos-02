@@ -1,0 +1,78 @@
+
+.app\controllers\notificationcontroller::deleteÖ
+{C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\NotificationController.phpM M("1*Á
+2P P(=´
+®
+P P( 
+%3"__mapSet*)
+
+__unknown_file (
+
+	$_SESSION*'
+
+__unknown_file (	
+success*8
+
+__unknown_file (
+Notificaci√≥n eliminada.ìê
+Q Q(+
+%4*F
+
+__unknown_file (*(
+&app\controllers\notificationcontroller**
+
+__unknown_file (
+
+/dashboard2
+redirectto"
+R R(
+true*Ò
+3T T(F¥
+±
+T T(
+%5"__mapSet*)
+
+__unknown_file (
+
+	$_SESSION*%
+
+__unknown_file (	
+error*C
+
+__unknown_file ('%
+#Error al eliminar la notificaci√≥n.ìê
+U U(+
+%6*F
+
+__unknown_file (*(
+&app\controllers\notificationcontroller**
+
+__unknown_file (
+
+/dashboard2
+redirectto"
+V V(	
+false*ˇ
+1O O(=w
+u
+O O($
+%1"__id*]
+
+__unknown_file (A*?(
+&app\controllers\notificationcontroller"
+notificationModelom
+O O(=
+%2*"
+
+__unknown_file (
+
+%1*#
+
+__unknown_file (
+
+$id2deletenotification*
+2
+3:
+M M(
+$idB*(
+&app\controllers\notificationcontrollerH

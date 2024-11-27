@@ -1,0 +1,59 @@
+
+(app\models\notificationmodel::markasread{
+qC:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\NotificationModel.php ("1*í
+1   (\`
+^
+   (
+%1"__id*F
+
+__unknown_file (**(
+app\models\notificationmodel"
+conn•’
+   ([
+%2*"
+
+__unknown_file (
+
+%1*S
+
+__unknown_file (75
+3UPDATE notifications SET is_read = 1 WHERE id = :id2prepare?
+=
+   ([
+$stmt"__id*"
+
+__unknown_file (
+
+%2
+! !(+
+%3"$ArrayŠ
+‡
+! !(+
+%4"__mapSet*"
+
+__unknown_file (
+
+%3*"
+
+__unknown_file (
+id*#
+
+__unknown_file (
+
+$idfd
+! !(,
+%5*%
+
+__unknown_file (	
+
+$stmt*"
+
+__unknown_file (
+
+%32execute"
+! !(-
+
+%5:
+ ("
+$idB 
+app\models\notificationmodelH

@@ -1,0 +1,79 @@
+
+*app\controllers\taskcontroller::deletetask}
+sC:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php\ \("1*â
+2_ _(@®
+«
+_ _( 
+%3"__mapSet*)
+
+__unknown_file (
+
+	$_SESSION*'
+
+__unknown_file (	
+success*;
+
+__unknown_file (
+Tarea eliminada con Ã©xito.‹ˆ
+` `(+
+%4*>
+
+__unknown_file (" 
+app\controllers\taskcontroller**
+
+__unknown_file (
+
+/dashboard2
+redirectto"
+a a(
+true*á
+3c c(?¬
+©
+c c(
+%5"__mapSet*)
+
+__unknown_file (
+
+	$_SESSION*%
+
+__unknown_file (	
+error*;
+
+__unknown_file (
+Error al eliminar la tarea.‹ˆ
+d d(+
+%6*>
+
+__unknown_file (" 
+app\controllers\taskcontroller**
+
+__unknown_file (
+
+/dashboard2
+redirectto"
+e e(	
+false*ç
+1^ ^(-g
+e
+^ ^(
+%1"__id*M
+
+__unknown_file (1*/ 
+app\controllers\taskcontroller"
+	taskModelge
+^ ^(-
+%2*"
+
+__unknown_file (
+
+%1*#
+
+__unknown_file (
+
+$id2
+deletetask*
+2
+3:
+\ \("
+$idB" 
+app\controllers\taskcontrollerH

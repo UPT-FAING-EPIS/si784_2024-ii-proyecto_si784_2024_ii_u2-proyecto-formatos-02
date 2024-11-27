@@ -1,0 +1,79 @@
+
+2app\controllers\notificationcontroller::markasreadÖ
+{C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\NotificationController.php? ?("1*Ò
+2B B(Fµ
+≤
+B B( 
+%3"__mapSet*)
+
+__unknown_file (
+
+	$_SESSION*'
+
+__unknown_file (	
+success*B
+
+__unknown_file (&$
+"Notificaci√≥n marcada como le√≠da.ìê
+C C(+
+%4*F
+
+__unknown_file (*(
+&app\controllers\notificationcontroller**
+
+__unknown_file (
+
+/dashboard2
+redirectto"
+D D(
+true*˚
+3F F(Oæ
+ª
+F F(
+%5"__mapSet*)
+
+__unknown_file (
+
+	$_SESSION*%
+
+__unknown_file (	
+error*M
+
+__unknown_file (1/
+-Error al marcar la notificaci√≥n como le√≠da.ìê
+G G(+
+%6*F
+
+__unknown_file (*(
+&app\controllers\notificationcontroller**
+
+__unknown_file (
+
+/dashboard2
+redirectto"
+H H(	
+false*˜
+1A A(5w
+u
+A A($
+%1"__id*]
+
+__unknown_file (A*?(
+&app\controllers\notificationcontroller"
+notificationModelge
+A A(5
+%2*"
+
+__unknown_file (
+
+%1*#
+
+__unknown_file (
+
+$id2
+markasread*
+2
+3:
+? ?("
+$idB*(
+&app\controllers\notificationcontrollerH

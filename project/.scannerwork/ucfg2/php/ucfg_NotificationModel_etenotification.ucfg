@@ -1,0 +1,59 @@
+
+0app\models\notificationmodel::deletenotification{
+qC:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\NotificationModel.php% %(&"1*â
+1' '(Q`
+^
+' '(
+%1"__id*F
+
+__unknown_file (**(
+app\models\notificationmodel"
+connŠ‡
+' '(P
+%2*"
+
+__unknown_file (
+
+%1*H
+
+__unknown_file (,*
+(DELETE FROM notifications WHERE id = :id2prepare?
+=
+' '(P
+$stmt"__id*"
+
+__unknown_file (
+
+%2
+( ((+
+%3"$ArrayŠ
+‡
+( ((+
+%4"__mapSet*"
+
+__unknown_file (
+
+%3*"
+
+__unknown_file (
+id*#
+
+__unknown_file (
+
+$idfd
+( ((,
+%5*%
+
+__unknown_file (	
+
+$stmt*"
+
+__unknown_file (
+
+%32execute"
+( ((-
+
+%5:
+%' %(*
+$idB 
+app\models\notificationmodelH

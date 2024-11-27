@@ -16,6 +16,9 @@
     <server name="REQUEST_METHOD" value="GET"/>
   </php>
   <logging>
+    <!-- Reporte Clover XML para cobertura de código -->
+    <log type="coverage-clover" target="coverage/clover.xml" />
+    <!-- Reporte JUnit para resultados de pruebas -->
     <junit outputFile="coverage/junit.xml" />
   </logging>
   <source>

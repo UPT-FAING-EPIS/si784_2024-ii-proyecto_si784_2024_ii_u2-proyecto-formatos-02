@@ -1,0 +1,32 @@
+
++app\controllers\taskcontroller::__construct}
+sC:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php ("1*:
+2
+TaskController.php"
+ (
+implicit return*ü
+1 (&o
+m
+ (%/ 
+app\controllers\taskcontroller"
+	taskModel"__id**
+
+__unknown_file (
+
+
+$taskModelw
+u
+ (-3 
+app\controllers\taskcontroller"
+categoryModel"__id*.
+
+__unknown_file (
+
+$categoryModel*
+2:
+  (*
+
+$taskModel:
+, (:
+$categoryModelB" 
+app\controllers\taskcontrollerH
