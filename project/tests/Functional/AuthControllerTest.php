@@ -134,5 +134,34 @@ class AuthControllerTest extends TestCase
         $this->assertEquals('/login', $this->authController->redirect);
     }
 
+    /**
+     * Verifica que el registro falle si el correo ya está registrado.
+     */
+    public function testRegisterWithExistingEmail()
+    {
+        $data = [
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+            'password' => 'password',
+        ];
+
+        // Simular que el correo ya existe
+        $this->mockUserModel->shouldReceive('findUserByEmail')
+            ->once()
+            ->with($data['email'])
+            ->andReturn(['id' => 1]);
+
+        // Ejecutar el método
+        $result = $this->authController->register($data);
+
+        // Verificar que el registro falló
+        $this->assertFalse($result);
+        $this->assertEquals("El correo ya está registrado.", $_SESSION['error']);
+        $this->assertEquals('/register', $this->authController->redirect);
+    }
+
+
+
+
 
 }
