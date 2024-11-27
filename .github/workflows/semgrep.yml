@@ -3,44 +3,60 @@ name: Semgrep Scan
 on:
   push:
     branches:
-      - main   
-    paths:
-      - '**/*'
+      - main  # Se ejecutará cuando haya un push a la rama 'main'
 
 jobs:
-  semgrep-scan:
-    runs-on: ubuntu-latest  # Usar Ubuntu para ejecutar la acción
+  security:
+    runs-on: ubuntu-latest  # Ejecutar en un entorno Ubuntu
 
     steps:
-    - name: Checkout the code
-      uses: actions/checkout@v2  # Descargar el código del repositorio
+    # Paso 1: Descargar el código del repositorio
+    - name: Checkout Repository
+      uses: actions/checkout@v4  # Usar la última versión de actions/checkout
 
-    - name: Set up Docker
-      uses: docker/setup-buildx-action@v2  # Preparar Docker para ejecutar el contenedor
+    # Paso 2: Configurar Semgrep con Docker
+    - name: Set up Semgrep
+      run: docker pull semgrep/semgrep  # Descargar la imagen de Semgrep
 
-    - name: Run Semgrep
+    # Paso 3: Ejecutar Semgrep con salida SARIF
+    - name: Run Semgrep (SARIF Output)
       run: |
-        docker run --rm \
-        -v "${{ github.workspace }}/project:/src" \
-        -v "${{ github.workspace }}/project/informes/segrem:/reports" \
-        returntocorp/semgrep \
-        semgrep --config "p/php" /src/app \
-        --sarif --output /reports/reporte.sarif  # Solo generar reporte SARIF
+        docker run --rm -v $(pwd):/src semgrep/semgrep semgrep scan --config="p/php" --sarif --output=report.sarif --metrics=off  # Ejecutar el análisis y generar reporte SARIF
 
-    - name: Install sarif-html to convert SARIF to HTML
+    # Paso 4: Subir el archivo SARIF a GitHub Code Scanning
+    - name: Upload SARIF result to GitHub Code Scanning
+      uses: github/codeql-action/upload-sarif@v3
+      with:
+        sarif_file: report.sarif  # Subir el archivo SARIF generado
+
+    # Paso 5: Ejecutar Semgrep con salida JSON
+    - name: Run Semgrep (JSON Output)
       run: |
-        sudo apt-get install -y nodejs npm  # Instalar Node.js y npm
-        sudo npm install -g sarif-html  # Instalar herramienta de conversión SARIF a HTML
+        docker run --rm -v $(pwd):/src semgrep/semgrep semgrep scan --config="p/php" --json --output semgrep.json --metrics=off  # Ejecutar el análisis y generar reporte JSON
 
-    - name: Convert SARIF to HTML
+    # Paso 6: Instalar prospector2html para convertir JSON a HTML
+    - name: Install prospector-html
       run: |
-        sarif-html /reports/reporte.sarif /reports/reporte.html  # Convertir SARIF a HTML
+        python -m pip install --upgrade pip
+        pip install prospector2html  # Instalar la herramienta para convertir JSON a HTML
 
+    # Paso 7: Convertir los resultados JSON de Semgrep a HTML
+    - name: Convert Semgrep results to HTML
+      run: |
+        prospector-html --input semgrep.json --output semgrep-report.html --filter semgrep || true  # Convertir el JSON a HTML
+
+    # Paso 8: Mover el reporte HTML a la carpeta 'informes/segrem'
+    - name: Move report to Reportes folder
+      run: |
+        mkdir -p project/informes/segrem  # Crear la carpeta si no existe
+        mv semgrep-report.html project/informes/segrem/  # Mover el reporte HTML a la carpeta
+
+    # Paso 9: Subir los reportes (SARIF y HTML) al repositorio
     - name: Commit and push SARIF and HTML reports to GitHub
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-        git add project/informes/segrem/reporte.sarif  # Añadir reporte SARIF
-        git add project/informes/segrem/reporte.html  # Añadir reporte HTML
-        git commit -m "Add Semgrep reports (SARIF and HTML)"  # Hacer commit de los reportes
-        git push  # Subir los reportes al repositorio
+        git add project/informes/segrem/reporte.sarif  # Añadir el archivo SARIF generado
+        git add project/informes/segrem/semgrep-report.html  # Añadir el archivo HTML generado
+        git commit -m "Add Semgrep reports (SARIF and HTML)"  # Realizar el commit
+        git push  # Realizar el push de los reportes al repositorio
