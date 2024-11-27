@@ -122,5 +122,15 @@ class UserModelTest extends TestCase
         $this->assertNotNull($user, "El usuario no fue encontrado.");
         $this->assertEquals($testEmail, $user['email'], "El correo del usuario no coincide.");
     }
+    
+    /**
+     * Verifica que no se encuentre un usuario si el correo electrónico no existe.
+     */
+    public function testFindUserByEmailNotFound()
+    {
+        $testEmail = "nonexistentuser@gmail.com";
+        $user = $this->userModel->findUserByEmail($testEmail);
+        $this->assertNull($user, "Se encontró un usuario que no debería existir.");
+    }
 
 }
