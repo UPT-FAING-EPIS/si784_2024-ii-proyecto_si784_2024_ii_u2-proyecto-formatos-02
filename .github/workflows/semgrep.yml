@@ -3,14 +3,13 @@ name: Semgrep Scan
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - main   # Se activa en push a la rama 'main', puedes cambiar la rama si lo deseas
+    paths:
+      - '**/*.php'  # Solo se activará si hay cambios en archivos PHP
 
 jobs:
   semgrep-scan:
-    runs-on: ubuntu-latest  # o windows-latest si necesitas Windows
+    runs-on: ubuntu-latest  # Usa el sistema operativo de tu preferencia
 
     steps:
     - name: Checkout the code
@@ -27,7 +26,10 @@ jobs:
         returntocorp/semgrep \
         semgrep --config "p/php" /src/app/Controllers/TaskController.php --sarif --output /reports/reporte.sarif
 
-    - name: Upload SARIF report to GitHub
-      uses: github/codeql-action/upload-sarif@v2
-      with:
-        sarif_file: ${{ github.workspace }}/project/informes/segrem/reporte.sarif
+    - name: Commit and push SARIF report to GitHub
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add project/informes/segrem/reporte.sarif
+        git commit -m "Add Semgrep report"
+        git push
