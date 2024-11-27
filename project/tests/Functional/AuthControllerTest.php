@@ -161,7 +161,23 @@ class AuthControllerTest extends TestCase
     }
 
 
+    /**
+     * Verifica que el registro falle si faltan campos obligatorios.
+     */
+    public function testRegisterWithMissingFields()
+    {
+        $data = [
+            'name' => '',
+            'email' => '',
+            'password' => ''
+        ];
 
+        $result = $this->authController->register($data);
+
+        $this->assertFalse($result);
+        $this->assertEquals("Por favor, complete todos los campos.", $_SESSION['error']);
+        $this->assertEquals('/register', $this->authController->redirect);
+    }
 
 
 }
