@@ -205,4 +205,21 @@ class AuthControllerTest extends TestCase
         $this->assertEquals("Error al registrar al usuario.", $_SESSION['error']);
         $this->assertEquals('/register', $this->authController->redirect);
     }
+
+    /**
+     * Verifica que el método logout destruya correctamente la sesión.
+     */
+    public function testLogout()
+    {
+        // Simular sesión activa
+        $_SESSION['user'] = 1;
+
+        // Ejecutar el método
+        $result = $this->authController->logout();
+
+        // Verificar que la sesión fue destruida
+        $this->assertTrue($result);
+        $this->assertEquals('/login', $this->authController->redirect);
+    }
+
 }
