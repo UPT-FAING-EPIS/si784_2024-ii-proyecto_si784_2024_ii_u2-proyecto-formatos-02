@@ -179,5 +179,30 @@ class AuthControllerTest extends TestCase
         $this->assertEquals('/register', $this->authController->redirect);
     }
 
+    /**
+     * Verifica el manejo del error cuando la creación del usuario falla en el modelo.
+     */
+    public function testRegisterFailsToCreateUser()
+    {
+        $data = [
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+            'password' => 'password',
+        ];
 
+        $this->mockUserModel->shouldReceive('findUserByEmail')
+            ->once()
+            ->with($data['email'])
+            ->andReturn(null);
+
+        $this->mockUserModel->shouldReceive('createUser')
+            ->once()
+            ->andReturn(false);
+
+        $result = $this->authController->register($data);
+
+        $this->assertFalse($result);
+        $this->assertEquals("Error al registrar al usuario.", $_SESSION['error']);
+        $this->assertEquals('/register', $this->authController->redirect);
+    }
 }
