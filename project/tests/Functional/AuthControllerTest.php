@@ -221,5 +221,17 @@ class AuthControllerTest extends TestCase
         $this->assertTrue($result);
         $this->assertEquals('/login', $this->authController->redirect);
     }
+    /**
+     * Verifica que el logout funcione incluso cuando no hay una sesión activa.
+     */
+    public function testLogoutWithoutActiveSession()
+    {
+        unset($_SESSION['user']);
 
+        $result = $this->authController->logout();
+
+        $this->assertTrue($result);
+        $this->assertEquals('/login', $this->authController->redirect);
+        $this->assertEquals("Has cerrado sesión exitosamente.", $_SESSION['success']);
+    }
 }
