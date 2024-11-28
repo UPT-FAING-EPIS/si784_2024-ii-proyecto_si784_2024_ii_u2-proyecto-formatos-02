@@ -1,0 +1,15 @@
+{
+    "source": {
+        "directories": ["app"]
+    },
+    "logs": {
+        "text": "informes/mutacion/infection-log.txt",
+        "summary": "informes/mutacion/infection-summary.txt",
+        "html": "informes/mutacion/infection-report"
+    },
+    "phpUnit": {
+        "configDir": ".",
+        "customPath": "vendor/bin/phpunit"
+    },
+    "timeout": 60
+}

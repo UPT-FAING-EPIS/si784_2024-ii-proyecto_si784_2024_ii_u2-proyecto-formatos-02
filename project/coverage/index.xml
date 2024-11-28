@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <build time="Wed Nov 27 18:49:48 CET 2024" phpunit="11.4.3" coverage="11.0.7">
+    <runtime name="PHP" version="8.2.12" url="https://www.php.net/"/>
+    <driver name="xdebug" version="3.3.2"/>
+  </build>
+  <project source="C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app">
+    <tests>
+      <test name="Tests\Unit\CategoryModelTest::testCreateCategorySuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\CategoryModelTest::testCreateCategoryFailsWithoutName" size="unknown" status="success"/>
+      <test name="Tests\Unit\CategoryModelTest::testGetCategoriesSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\CategoryModelTest::testGetCategoryByIdSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\CategoryModelTest::testUpdateCategorySuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\CategoryModelTest::testUpdateCategoryFailsWithoutId" size="unknown" status="success"/>
+      <test name="Tests\Unit\CategoryModelTest::testDeleteCategorySuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\NotificationModelTest::testCreateNotificationSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\NotificationModelTest::testCreateNotificationFailsWithoutRequiredFields" size="unknown" status="success"/>
+      <test name="Tests\Unit\NotificationModelTest::testGetNotificationsByUserSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\NotificationModelTest::testMarkAsReadSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\NotificationModelTest::testDeleteNotificationSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\TaskModelTest::testCreateTaskSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\TaskModelTest::testCreateTaskFails" size="unknown" status="success"/>
+      <test name="Tests\Unit\TaskModelTest::testGetTasksByUserSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\TaskModelTest::testUpdateTaskSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\TaskModelTest::testUpdateTaskFailsWithoutRequiredFields" size="unknown" status="success"/>
+      <test name="Tests\Unit\TaskModelTest::testDeleteTaskSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\TaskModelTest::testGetTaskByIdSuccess" size="unknown" status="success"/>
+      <test name="Tests\Unit\TaskModelTest::testGetTaskByIdReturnsNullIfNotFound" size="unknown" status="success"/>
+      <test name="Tests\Unit\UserModelTest::testCreateUser" size="unknown" status="success"/>
+      <test name="Tests\Unit\UserModelTest::testPasswordVerification" size="unknown" status="success"/>
+      <test name="Tests\Unit\UserModelTest::testCreateUserWithDuplicateEmail" size="unknown" status="success"/>
+      <test name="Tests\Unit\UserModelTest::testCreateUserWithMissingFields" size="unknown" status="success"/>
+      <test name="Tests\Unit\UserModelTest::testFindUserByEmail" size="unknown" status="success"/>
+      <test name="Tests\Unit\UserModelTest::testFindUserByEmailNotFound" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testLoginWithValidCredentials" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testLoginWithInvalidCredentials" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testLoginWithMissingFields" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testRegisterWithValidData" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testRegisterWithExistingEmail" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testRegisterWithMissingFields" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testRegisterFailsToCreateUser" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testLogout" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testLogoutWithoutActiveSession" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testShowLoginRedirectsIfAuthenticated" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testShowLoginIncludesLoginView" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testShowRegisterRedirectsIfAuthenticated" size="unknown" status="success"/>
+      <test name="Tests\Functional\AuthControllerTest::testShowRegisterIncludesRegisterView" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testCreateNotificationWithValidData" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testCreateNotificationWithEmptyMessage" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testCreateNotificationWithoutUserSession" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testMarkAsReadWithSuccess" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testDeleteNotificationWithSuccess" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testCreateNotificationWithInvalidUserId" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testShowNotifications" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testShowNotificationsWithoutUserLoggedIn" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testDeleteNotificationWithoutId" size="unknown" status="success"/>
+      <test name="Tests\Functional\NotificationControllerTest::testMarkAsReadWithFailure" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testShowTasks" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testCreateTaskWithValidData" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testCreateTaskWithMissingCategoryId" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testEditTaskWithValidData" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testDeleteTaskSuccessfully" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testEditTaskWithInvalidData" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testDeleteTaskWithFailure" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testCreateTaskWithException" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testDeleteTaskWithException" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testEditTaskWithInvalidCategory" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testCreateTaskWithNonExistentCategory" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testShowCreateTaskForm" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testShowEditTaskFormWithValidTask" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testShowEditTaskFormWithInvalidTask" size="unknown" status="success"/>
+      <test name="Tests\Functional\TaskControllerTest::testCreateTaskWithLongTitle" size="unknown" status="success"/>
+      <test name="Tests\Integration\DatabaseTest::testDatabaseConnectionWithValidConfig" size="unknown" status="success"/>
+      <test name="Tests\Integration\DatabaseTest::testPdoErrorModeIsSetCorrectly" size="unknown" status="success"/>
+      <test name="Tests\Integration\DatabaseTest::testPdoAttributesAreSetCorrectly" size="unknown" status="success"/>
+    </tests>
+    <directory name="/">
+      <totals>
+        <lines total="599" comments="69" code="530" executable="219" executed="209" percent="95.43"/>
+        <methods count="41" tested="36" percent="87.80"/>
+        <functions count="0" tested="0" percent="0"/>
+        <classes count="8" tested="4" percent="50.00"/>
+        <traits count="0" tested="0" percent="0"/>
+      </totals>
+      <directory name="Controllers">
+        <totals>
+          <lines total="353" comments="41" code="312" executable="140" executed="133" percent="95.00"/>
+          <methods count="23" tested="19" percent="82.61"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="3" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="AuthController.php" href="Controllers/AuthController.php.xml">
+          <totals>
+            <lines total="120" comments="10" code="110" executable="50" executed="48" percent="96.00"/>
+            <methods count="8" tested="7" percent="87.50"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="NotificationController.php" href="Controllers/NotificationController.php.xml">
+          <totals>
+            <lines total="101" comments="9" code="92" executable="41" executed="39" percent="95.12"/>
+            <methods count="6" tested="5" percent="83.33"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="TaskController.php" href="Controllers/TaskController.php.xml">
+          <totals>
+            <lines total="132" comments="22" code="110" executable="49" executed="46" percent="93.88"/>
+            <methods count="9" tested="7" percent="77.78"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Models">
+        <totals>
+          <lines total="246" comments="28" code="218" executable="79" executed="76" percent="96.20"/>
+          <methods count="18" tested="17" percent="94.44"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="5" tested="4" percent="80.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="CategoryModel.php" href="Models/CategoryModel.php.xml">
+          <totals>
+            <lines total="66" comments="14" code="52" executable="20" executed="20" percent="100.00"/>
+            <methods count="5" tested="5" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="Database.php" href="Models/Database.php.xml">
+          <totals>
+            <lines total="38" comments="1" code="37" executable="12" executed="9" percent="75.00"/>
+            <methods count="2" tested="1" percent="50.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="NotificationModel.php" href="Models/NotificationModel.php.xml">
+          <totals>
+            <lines total="44" comments="6" code="38" executable="11" executed="11" percent="100.00"/>
+            <methods count="4" tested="4" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="TaskModel.php" href="Models/TaskModel.php.xml">
+          <totals>
+            <lines total="54" comments="0" code="54" executable="23" executed="23" percent="100.00"/>
+            <methods count="5" tested="5" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+        <file name="UserModel.php" href="Models/UserModel.php.xml">
+          <totals>
+            <lines total="44" comments="7" code="37" executable="13" executed="13" percent="100.00"/>
+            <methods count="2" tested="2" percent="100.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="1" percent="100.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+    </directory>
+  </project>
+</phpunit>

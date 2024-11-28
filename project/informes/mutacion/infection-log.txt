@@ -1,0 +1,383 @@
+Escaped mutants:
+================
+
+1) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\AuthController.php:22    [M] ProtectedVisibility
+
+@@ @@
+         }
+     }
+     // Método para redirigir (real o simulado)
+-    protected function redirectTo($url)
++    private function redirectTo($url)
+     {
+         if (getenv('APP_ENV') === 'testing') {
+             // En modo de pruebas, almacena la redirección
+
+
+2) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\AuthController.php:59    [M] LogicalOr
+
+@@ @@
+     // Procesar inicio de sesión
+     public function login($data)
+     {
+-        if (empty($data['email']) || empty($data['password'])) {
++        if (empty($data['email']) && empty($data['password'])) {
+             $_SESSION['error'] = "Por favor, complete todos los campos.";
+             $this->redirectTo('/login');
+             return false;
+
+
+3) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\AuthController.php:81    [M] LogicalOr
+
+@@ @@
+     // Procesar registro de usuario
+     public function register($data)
+     {
+-        if (empty($data['name']) || empty($data['email']) || empty($data['password'])) {
++        if (empty($data['name']) && empty($data['email']) || empty($data['password'])) {
+             $_SESSION['error'] = "Por favor, complete todos los campos.";
+             $this->redirectTo('/register');
+             return false;
+
+
+4) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\AuthController.php:81    [M] LogicalOr
+
+@@ @@
+     // Procesar registro de usuario
+     public function register($data)
+     {
+-        if (empty($data['name']) || empty($data['email']) || empty($data['password'])) {
++        if ((empty($data['name']) || empty($data['email'])) && empty($data['password'])) {
+             $_SESSION['error'] = "Por favor, complete todos los campos.";
+             $this->redirectTo('/register');
+             return false;
+
+
+5) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\AuthController.php:109    [M] FunctionCallRemoval
+
+@@ @@
+     // Cerrar sesión
+     public function logout()
+     {
+-        session_destroy();
++        
+         $_SESSION['success'] = "Has cerrado sesión exitosamente.";
+         $this->redirectTo('/login');
+         return true;
+
+
+6) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\NotificationController.php:20    [M] ProtectedVisibility
+
+@@ @@
+         $this->notificationModel = $notificationModel;
+     }
+     // Método centralizado para redirecciones
+-    protected function redirectTo($url)
++    private function redirectTo($url)
+     {
+         if (getenv('APP_ENV') === 'testing') {
+             // En modo pruebas, almacena la redirección
+
+
+7) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php:25    [M] ProtectedVisibility
+
+@@ @@
+         $this->categoryModel = $categoryModel;
+     }
+     // Método para redirigir (real o simulado)
+-    protected function redirectTo($url)
++    private function redirectTo($url)
+     {
+         if (getenv('APP_ENV') === 'testing') {
+             // En modo de pruebas, almacena la redirección
+
+
+8) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php:73    [M] LogicalOr
+
+@@ @@
+     }
+     public function editTask($id, $data)
+     {
+-        if (empty($data['title']) || empty($data['description']) || !isset($data['category_id'])) {
++        if (empty($data['title']) && empty($data['description']) || !isset($data['category_id'])) {
+             $_SESSION['error'] = "Faltan datos para actualizar la tarea.";
+             // Error si faltan datos
+             $this->redirectTo('/dashboard');
+
+
+9) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php:73    [M] LogicalOr
+
+@@ @@
+     }
+     public function editTask($id, $data)
+     {
+-        if (empty($data['title']) || empty($data['description']) || !isset($data['category_id'])) {
++        if ((empty($data['title']) || empty($data['description'])) && !isset($data['category_id'])) {
+             $_SESSION['error'] = "Faltan datos para actualizar la tarea.";
+             // Error si faltan datos
+             $this->redirectTo('/dashboard');
+
+
+10) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php:125    [M] DecrementInteger
+
+@@ @@
+         // Obtener las categorías (si es necesario en la vista)
+         $categories = $this->categoryModel->getCategories();
+         // Inicializar valores predeterminados para claves de tarea
+-        $task['is_completed'] = $task['is_completed'] ?? 0;
++        $task['is_completed'] = $task['is_completed'] ?? -1;
+         // Valor predeterminado si no existe
+         // Incluir la vista y pasar las variables necesarias
+         include __DIR__ . '/../Views/edit_task.php';
+     }
+ }
+
+
+11) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php:125    [M] IncrementInteger
+
+@@ @@
+         // Obtener las categorías (si es necesario en la vista)
+         $categories = $this->categoryModel->getCategories();
+         // Inicializar valores predeterminados para claves de tarea
+-        $task['is_completed'] = $task['is_completed'] ?? 0;
++        $task['is_completed'] = $task['is_completed'] ?? 1;
+         // Valor predeterminado si no existe
+         // Incluir la vista y pasar las variables necesarias
+         include __DIR__ . '/../Views/edit_task.php';
+     }
+ }
+
+
+12) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php:125    [M] Coalesce
+
+@@ @@
+         // Obtener las categorías (si es necesario en la vista)
+         $categories = $this->categoryModel->getCategories();
+         // Inicializar valores predeterminados para claves de tarea
+-        $task['is_completed'] = $task['is_completed'] ?? 0;
++        $task['is_completed'] = 0 ?? $task['is_completed'];
+         // Valor predeterminado si no existe
+         // Incluir la vista y pasar las variables necesarias
+         include __DIR__ . '/../Views/edit_task.php';
+     }
+ }
+
+
+13) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:16    [M] LogicalOr
+
+@@ @@
+     public function __construct()
+     {
+         $config = include __DIR__ . '/../../config/database.php';
+-        if (empty($config['host']) || empty($config['db']) || empty($config['user']) || !isset($config['pass'])) {
++        if (empty($config['host']) && empty($config['db']) || empty($config['user']) || !isset($config['pass'])) {
+             throw new \InvalidArgumentException("Invalid database configuration.");
+         }
+         try {
+
+
+14) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:16    [M] LogicalOr
+
+@@ @@
+     public function __construct()
+     {
+         $config = include __DIR__ . '/../../config/database.php';
+-        if (empty($config['host']) || empty($config['db']) || empty($config['user']) || !isset($config['pass'])) {
++        if ((empty($config['host']) || empty($config['db'])) && empty($config['user']) || !isset($config['pass'])) {
+             throw new \InvalidArgumentException("Invalid database configuration.");
+         }
+         try {
+
+
+15) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:16    [M] LogicalOr
+
+@@ @@
+     public function __construct()
+     {
+         $config = include __DIR__ . '/../../config/database.php';
+-        if (empty($config['host']) || empty($config['db']) || empty($config['user']) || !isset($config['pass'])) {
++        if ((empty($config['host']) || empty($config['db']) || empty($config['user'])) && !isset($config['pass'])) {
+             throw new \InvalidArgumentException("Invalid database configuration.");
+         }
+         try {
+
+
+16) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:26    [M] MethodCallRemoval
+
+@@ @@
+         }
+         try {
+             $this->conn = new PDO("mysql:host={$config['host']};dbname={$config['db']}", $config['user'], $config['pass']);
+-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
++            
+         } catch (PDOException $e) {
+             throw new PDOException("Connection failed: " . $e->getMessage(), (int) $e->getCode(), $e);
+         }
+
+
+17) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\UserModel.php:21    [M] LogicalOr
+
+@@ @@
+     public function createUser($data)
+     {
+         // Verificar si los campos obligatorios están presentes
+-        if (empty($data['name']) || empty($data['email']) || empty($data['password'])) {
++        if (empty($data['name']) && empty($data['email']) || empty($data['password'])) {
+             return false;
+             // Retornar false si falta algún campo
+         }
+
+
+18) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\UserModel.php:21    [M] LogicalOr
+
+@@ @@
+     public function createUser($data)
+     {
+         // Verificar si los campos obligatorios están presentes
+-        if (empty($data['name']) || empty($data['email']) || empty($data['password'])) {
++        if ((empty($data['name']) || empty($data['email'])) && empty($data['password'])) {
+             return false;
+             // Retornar false si falta algún campo
+         }
+
+
+Timed Out mutants:
+==================
+
+Skipped mutants:
+================
+
+Not Covered mutants:
+====================
+
+1) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\AuthController.php:29    [M] FunctionCallRemoval
+
+@@ @@
+             // En modo de pruebas, almacena la redirección
+             $this->redirect = $url;
+         } else {
+-            // En producción, ejecuta la redirección real
+-            header("Location: {$url}");
++            
+             exit;
+         }
+     }
+
+
+2) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\NotificationController.php:27    [M] FunctionCallRemoval
+
+@@ @@
+             // En modo pruebas, almacena la redirección
+             $this->redirect = $url;
+         } else {
+-            // En producción, realiza la redirección real
+-            header("Location: {$url}");
++            
+             exit;
+         }
+     }
+
+
+3) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php:32    [M] FunctionCallRemoval
+
+@@ @@
+             // En modo de pruebas, almacena la redirección
+             $this->redirect = $url;
+         } else {
+-            // En producción, ejecuta la redirección real
+-            header("Location: {$url}");
++            
+             exit;
+         }
+     }
+
+
+4) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\TaskController.php:105    [M] PublicVisibility
+
+@@ @@
+             return false;
+         }
+     }
+-    public function getTaskById($id)
++    protected function getTaskById($id)
+     {
+         return $this->taskModel->getTaskById($id);
+     }
+
+
+5) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:17    [M] Throw_
+
+@@ @@
+     {
+         $config = include __DIR__ . '/../../config/database.php';
+         if (empty($config['host']) || empty($config['db']) || empty($config['user']) || !isset($config['pass'])) {
+-            throw new \InvalidArgumentException("Invalid database configuration.");
++            new \InvalidArgumentException("Invalid database configuration.");
+         }
+         try {
+             $this->conn = new PDO("mysql:host={$config['host']};dbname={$config['db']}", $config['user'], $config['pass']);
+
+
+6) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:28    [M] Concat
+
+@@ @@
+             $this->conn = new PDO("mysql:host={$config['host']};dbname={$config['db']}", $config['user'], $config['pass']);
+             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+         } catch (PDOException $e) {
+-            throw new PDOException("Connection failed: " . $e->getMessage(), (int) $e->getCode(), $e);
++            throw new PDOException($e->getMessage() . "Connection failed: ", (int) $e->getCode(), $e);
+         }
+     }
+     // Método para acceder a la conexión
+
+
+7) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:28    [M] ConcatOperandRemoval
+
+@@ @@
+             $this->conn = new PDO("mysql:host={$config['host']};dbname={$config['db']}", $config['user'], $config['pass']);
+             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+         } catch (PDOException $e) {
+-            throw new PDOException("Connection failed: " . $e->getMessage(), (int) $e->getCode(), $e);
++            throw new PDOException($e->getMessage(), (int) $e->getCode(), $e);
+         }
+     }
+     // Método para acceder a la conexión
+
+
+8) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:28    [M] ConcatOperandRemoval
+
+@@ @@
+             $this->conn = new PDO("mysql:host={$config['host']};dbname={$config['db']}", $config['user'], $config['pass']);
+             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+         } catch (PDOException $e) {
+-            throw new PDOException("Connection failed: " . $e->getMessage(), (int) $e->getCode(), $e);
++            throw new PDOException("Connection failed: ", (int) $e->getCode(), $e);
+         }
+     }
+     // Método para acceder a la conexión
+
+
+9) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:28    [M] CastInt
+
+@@ @@
+             $this->conn = new PDO("mysql:host={$config['host']};dbname={$config['db']}", $config['user'], $config['pass']);
+             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+         } catch (PDOException $e) {
+-            throw new PDOException("Connection failed: " . $e->getMessage(), (int) $e->getCode(), $e);
++            throw new PDOException("Connection failed: " . $e->getMessage(), $e->getCode(), $e);
+         }
+     }
+     // Método para acceder a la conexión
+
+
+10) C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Models\Database.php:28    [M] Throw_
+
+@@ @@
+             $this->conn = new PDO("mysql:host={$config['host']};dbname={$config['db']}", $config['user'], $config['pass']);
+             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+         } catch (PDOException $e) {
+-            throw new PDOException("Connection failed: " . $e->getMessage(), (int) $e->getCode(), $e);
++            new PDOException("Connection failed: " . $e->getMessage(), (int) $e->getCode(), $e);
+         }
+     }
+     // Método para acceder a la conexión
