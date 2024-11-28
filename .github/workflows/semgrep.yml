@@ -20,7 +20,7 @@ jobs:
     # Paso 3: Ejecutar Semgrep con salida SARIF
     - name: Run Semgrep (SARIF Output)
       run: |
-        docker run --rm -v $(pwd):/src semgrep/semgrep semgrep scan --config="p/php" --config="p/security" --sarif --output=report.sarif --metrics=off
+        docker run --rm -v $(pwd):/src semgrep/semgrep semgrep scan --config="auto" --sarif --output=report.sarif --metrics=off  # Ejecutar el análisis y generar reporte SARIF
 
     # Paso 4: Subir el archivo SARIF a GitHub Code Scanning
     - name: Upload SARIF result to GitHub Code Scanning
@@ -31,7 +31,7 @@ jobs:
     # Paso 5: Ejecutar Semgrep con salida JSON
     - name: Run Semgrep (JSON Output)
       run: |
-        docker run --rm -v $(pwd):/src semgrep/semgrep semgrep scan --config="p/php" --json --output semgrep.json --metrics=off  # Ejecutar el análisis y generar reporte JSON
+        docker run --rm -v $(pwd):/src semgrep/semgrep semgrep scan --config="auto" --json --output semgrep.json --metrics=off  # Ejecutar el análisis y generar reporte JSON
 
     # Paso 6: Instalar prospector2html para convertir JSON a HTML
     - name: Install prospector-html
