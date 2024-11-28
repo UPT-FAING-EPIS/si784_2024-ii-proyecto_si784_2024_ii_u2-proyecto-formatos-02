@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1732732032">
-  <project timestamp="1732732032">
+<coverage generated="1732763874">
+  <project timestamp="1732763874">
     <package name="App\Controllers">
       <file name="C:\Users\TheGoat\Desktop\clone\proyecto-si784-2024-ii-u2-ayma_tapia_poma\project\app\Controllers\AuthController.php">
         <class name="App\Controllers\AuthController" namespace="App\Controllers">

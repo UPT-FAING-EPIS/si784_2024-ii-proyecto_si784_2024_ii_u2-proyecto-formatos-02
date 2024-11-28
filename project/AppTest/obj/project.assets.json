@@ -1739,19 +1739,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dylan\\.nuget\\packages\\": {}
+    "C:\\Users\\TheGoat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dylan\\OneDrive\\Escritorio\\Nueva carpeta (9)\\proyecto-si784-2024-ii-u2-ayma_tapia_poma\\project\\AppTest\\AppTest.csproj",
+      "projectUniqueName": "C:\\Users\\TheGoat\\Desktop\\clone\\proyecto-si784-2024-ii-u2-ayma_tapia_poma\\project\\AppTest\\AppTest.csproj",
       "projectName": "AppTest",
-      "projectPath": "C:\\Users\\dylan\\OneDrive\\Escritorio\\Nueva carpeta (9)\\proyecto-si784-2024-ii-u2-ayma_tapia_poma\\project\\AppTest\\AppTest.csproj",
-      "packagesPath": "C:\\Users\\dylan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dylan\\OneDrive\\Escritorio\\Nueva carpeta (9)\\proyecto-si784-2024-ii-u2-ayma_tapia_poma\\project\\AppTest\\obj\\",
+      "projectPath": "C:\\Users\\TheGoat\\Desktop\\clone\\proyecto-si784-2024-ii-u2-ayma_tapia_poma\\project\\AppTest\\AppTest.csproj",
+      "packagesPath": "C:\\Users\\TheGoat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TheGoat\\Desktop\\clone\\proyecto-si784-2024-ii-u2-ayma_tapia_poma\\project\\AppTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dylan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\TheGoat\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1817,7 +1817,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
