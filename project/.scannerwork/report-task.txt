@@ -3,5 +3,5 @@ projectKey=erickorganizacion_do-list
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.58142
 dashboardUrl=https://sonarcloud.io/dashboard?id=erickorganizacion_do-list
-ceTaskId=AZNu5fJjGWNouSWu5w_U
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZNu5fJjGWNouSWu5w_U
+ceTaskId=AZNwzm08WKwg7aE-FLqV
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZNwzm08WKwg7aE-FLqV
