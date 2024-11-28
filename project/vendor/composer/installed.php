@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'thegoat/project',
-        'pretty_version' => 'dev-develop',
-        'version' => 'dev-develop',
-        'reference' => '91de670b72da5fd4b24db9fac1f6785f542a13ef',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '3a05b05d0e9755915636e7f171d3552507751029',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -521,9 +521,9 @@
             'dev_requirement' => true,
         ),
         'thegoat/project' => array(
-            'pretty_version' => 'dev-develop',
-            'version' => 'dev-develop',
-            'reference' => '91de670b72da5fd4b24db9fac1f6785f542a13ef',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '3a05b05d0e9755915636e7f171d3552507751029',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
